@@ -1,0 +1,96 @@
+/* General */
+html, body {
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+h1, h2 {
+    margin-top: 2rem;
+    padding-bottom: 1px;
+    margin-bottom: 1rem; 
+} 
+
+.container ul,
+.container table {
+    margin-top: 0;
+}
+
+ 
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    background-color: #fff; /* White content area on grey background */
+}
+
+.cover-image {
+    width: 100%;
+    height: auto; 
+    display: block; /* Ensures no extra space beneath the image */
+}
+
+/* Table for Schedule */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    box-shadow: 0 12px 12px #cccccc; /* Restored original shadow */
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #cccccc;
+}
+
+tr {
+    background-color: #fafafa; /* Restored original row color */
+}
+
+tr.day-header {
+    background-color: #cccccc; /* Restored header color */
+    font-weight: bold;
+    text-align: left;
+    border-top: 2px solid #4d4d4d; /* Restored border color */
+}
+
+table td:first-child {
+    width: 100px; /* Restored original width */
+    white-space: nowrap;
+}
+
+/* Style for speaker confirmation status */
+.status {
+    font-style: italic;
+    color: #303030;
+    font-size: 0.9em;
+    margin-left: 0.5em; /* Adds a bit of space */
+}
+.status::before {
+    content: ' —';
+    margin-right: 0.4em; /* Space between dash and text */
+}
+.status::after {
+    content: '—';
+    margin-left: 0.4em;  /* Space between text and dash */
+}
+
+code {
+    margin-left: 0.5em;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
